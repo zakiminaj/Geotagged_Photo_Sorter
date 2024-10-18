@@ -36,7 +36,6 @@ if not args.raw_file:
         print(f"{i+1}. {file}")
     file_choice = int(input("Select the RAW CSV file by number: ")) - 1
     args.raw_file = os.path.join(raw_dir, raw_files[file_choice])
-
 if not args.output_file:
     args.output_file = input("Please enter the path to save the output CSV file: ")
 
